@@ -1,12 +1,18 @@
 *{
     box-sizing:border-box;
+    margin:0;padding:0;
+    
 }
-body{
-    min-height:100vb;
-    width:clac (100% - 250);
-    transition:.3s;
-    float:right;
-    will-change: width;
-    
-    
+.page{
+    min-height:100vh;
+    .content-area{
+            min-height:100%;
+            width:calc(100% - 250px);
+            transition:.3s;
+            float:right;
+            will-change: width;
+        &.no-sidebar{
+            width:100%
+        }
+    }
 }

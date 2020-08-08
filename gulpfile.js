@@ -22,7 +22,7 @@ gulp.task('html',async function(){
 gulp.task('css',async function(){
      return gulp.src(["stage/css/**/*.css","stage/css/**/*.scss"])
                 .pipe(sourcemaps.init())
-                .pipe(sass({outputStyle:"expanded"}))
+                .pipe(sass({outputStyle:"compressed"}))
                 .pipe(autoprefixer('last 10 versions'))
                 .pipe(concat('main.css'))
                 .pipe(sourcemaps.write("."))

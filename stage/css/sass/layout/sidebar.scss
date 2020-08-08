@@ -4,8 +4,10 @@
     position:fixed;
     top:0;
     left:0;
-    left:-250px;
-    background-color:#ddd;
+    background-color:#ccc;
     padding:15px;
     transition:.3s;
+    &.no-sidebar{
+        left:-250px;
+    }
 }
